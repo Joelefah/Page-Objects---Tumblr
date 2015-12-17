@@ -4,7 +4,7 @@ Given(/^I am on the login page$/) do
   @b.visit
 end
 
-When(/^I enter the incorrect credentials$/) do
+When(/^I enter the invalid credentials$/) do
   @b.email "incorrect@gmail.com"
   @b.password "incorrect123"
   @b.login_button
@@ -15,7 +15,7 @@ Then(/^I should remain in the login page$/) do
 end
 
 
-When(/^I enter the correct credentials$/) do
+When(/^I enter the valid credentials$/) do
   @b.email "300globaltest@gmail.com"
   @b.password "TESTing123"
   @b.login_button

@@ -3,10 +3,10 @@ class App
     @b = browser
   end
   def generic_page
-      GenericPages.new @b
+    GenericPages.new @b
   end
   def google
-      GoogleHomePage.new @b
+    GoogleHomePage.new @b
   end
   def login
     LoginPage.new @b

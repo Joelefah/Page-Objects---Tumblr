@@ -1,5 +1,6 @@
 Feature: Create post on Tumblr
     
+    @post
   Scenario: Create a text post with Title and Body
     Given I select the text post button on the dashboard
     When I fill out the title field
