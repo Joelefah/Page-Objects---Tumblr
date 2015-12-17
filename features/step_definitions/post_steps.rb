@@ -15,6 +15,10 @@ When(/^I submit the post$/) do
   @b.submit_post
 end
 
+When(/^I go to my blog$/) do
+ @b.visit_blog
+end
+
 Then(/^I should see my post on the dashboard$/) do
   @b.verification
 end

@@ -24,6 +24,11 @@ class TumblrCreatePost < GenericPages
     submit_post
   end
 
+  def visit_blog
+    @browser.goto "https://massivetacodinosaur.tumblr.com/"
+    @browser.alert.ok
+  end
+
   def verification
     verification = @browser.elements(class: "body-text")
     verification.each do |a|
